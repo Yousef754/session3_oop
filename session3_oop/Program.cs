@@ -88,7 +88,24 @@
 
 
                     #endregion
-                    
+                    #region v5
+                    // shallow copy vs deep copy
+
+                    int[] arr1 = { 1, 2, 3 };
+                    int[] arr2 = { 4, 5, 6 };
+
+
+
+                    Console.WriteLine($"arr01: {arr1.GetHashCode()}");
+                    Console.WriteLine($"arr02: {arr2.GetHashCode()}");
+
+                    arr2 = arr1;
+
+                    Console.WriteLine($"arr01: {arr1.GetHashCode()}");
+                    Console.WriteLine($"arr02: {arr2.GetHashCode()}");
+
+
+                    #endregion
                 }
 
             }
