@@ -106,6 +106,18 @@
 
 
                     #endregion
+                    #region V6
+                    Employee E1 = new Employee() { Id = 1, Name = "ahmed", Age = 23, salary = 16000 };
+                    Employee E2 = new Employee() { Id = 1, Name = "ahmed", Age = 23, salary = 16000 };
+
+                    Console.WriteLine(E1.GetHashCode());
+                    Console.WriteLine(E2.GetHashCode());
+
+
+                    E1.salary = 59000;
+                    Console.WriteLine(E1);
+                    Console.WriteLine(E2);
+                    #endregion
                 }
 
             }

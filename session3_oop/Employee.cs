@@ -6,12 +6,17 @@ using System.Threading.Tasks;
 
 namespace session3_oop
 {
-    internal class Employee
+    internal class Employee : ICloneable
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public int Age {  get; set; }
-        public double salary {  get; set; }
+        public int Age { get; set; }
+        public double salary { get; set; }
+
+        public object Clone()
+        {
+            throw new NotImplementedException();
+        }
 
         public override string ToString()
         {
@@ -20,9 +25,16 @@ namespace session3_oop
 
 
 
+        public object clone()
+        {
+            return new Employee();
+            {
+                Id = this.Id;
+            }
+            ;
 
 
 
-
+        }
     }
 }
