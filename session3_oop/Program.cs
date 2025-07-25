@@ -2,35 +2,96 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+
+        static void Print10Number(SeriesByTwo series)
         {
-            #region interfaces
-            // interfaces:reference type
-            //code contract between the developer who write it and the developer who use it
-            // IMyType myType =IMyType();
+            for (int i = 0; i < 10; i++)
+            {
 
-            //note:can't create object from any interfaces
+                Console.WriteLine($"{series.current}");
+                series.Next();
+
+            }
+            series.Reset();
+
+            static void Print110Number(seriesByThree series)
+            {
+                for (int i = 0; i < 10; i++)
+                {
+
+                    Console.WriteLine($"{series.current}");
+                    series.Next();
+
+                }
+
+                series.Reset();
 
 
 
-            MyType myType = new MyType();
-            myType.salary = 12000;
-            Console.WriteLine(myType.salary);
-            myType.MyFun();
 
 
-            //ImyType mytype = new ImyType();
-            ImyType iimyType;
 
-            //iimyType = new ImyType();
-            //MyType myType = new MyType();
-            //myType.salary = 12000;
-            //Console.WriteLine(myType.salary);
-            //myType.MyFun();
-            //
 
-            #endregion
+                static void Main(string[] args)
+                {
+                    #region interfaces
+                    // interfaces:reference type
+                    //code contract between the developer who write it and the developer who use it
+                    // IMyType myType =IMyType();
 
+                    //note:can't create object from any interfaces
+
+
+
+                    MyType myType = new MyType();
+                    myType.salary = 12000;
+                    Console.WriteLine(myType.salary);
+                    myType.MyFun();
+
+
+                    //ImyType mytype = new ImyType();
+                    ImyType iimyType;
+
+                    //iimyType = new ImyType();
+                    //MyType myType = new MyType();
+                    //myType.salary = 12000;
+                    //Console.WriteLine(myType.salary);
+                    //myType.MyFun();
+                    //
+
+
+
+                    #endregion
+
+
+
+                    #region V3
+
+                    SeriesByTwo seriesByTwo = new SeriesByTwo();
+                    Print10Number(seriesByTwo);
+                    seriesByThree seriesbyThree = new seriesByThree();
+                    //SeriesByFour seriesByFour = new SeriesByFour();
+                    // print10number(seriesByFour);
+
+                    int[] Numbers = { 7, 3, 4, 5, 6, 0, 2, 1 };
+                    Array.Sort(Numbers);
+
+                    //foreach (int i in Numbers)
+                    //{
+                    //    //Console.WriteLine($"{item}");
+                    //}
+
+
+
+
+
+
+
+                    #endregion
+                    
+                }
+
+            }
         }
     }
 }
