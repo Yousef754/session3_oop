@@ -27,7 +27,7 @@
             //myType.salary = 12000;
             //Console.WriteLine(myType.salary);
             //myType.MyFun();
-
+            //
 
             #endregion
 
