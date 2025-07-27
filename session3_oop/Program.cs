@@ -118,6 +118,17 @@
                     Console.WriteLine(E1);
                     Console.WriteLine(E2);
                     #endregion
+                    #region V7
+                    // Employee[] employees=new Employee[3]
+                    //{new Employee(){id=1,name="ahmed",age=30,salary=15999},
+                    //new Employee(){id=2,name="omar",age=48,salary=20099},
+                    //  }
+                    //
+                    //Array.sort(employees);
+
+                    //int X =employees[0].comparto(employees[1]);
+                    //
+                    #endregion
                 }
 
             }
